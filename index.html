@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A feminist film analysis blog exploring 10 movies through the lens of feminism for all audiences." />
+  <title>Reel Feminism | Film Analysis Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1 class="site-title" onclick="showPage('intro')">Reel Feminism</h1>
+      <p class="site-tagline">Analyzing cinema through a feminist lens — for every audience</p>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showPage('intro')" id="nav-intro">Intro</a></li>
+          <li><a href="#" onclick="showPage('blogs')" id="nav-blogs">Blogs</a></li>
+          <li><a href="#" onclick="showPage('contact')" id="nav-contact">Key Words/Definitions</a></li>
+          <li><a href="#" onclick="showPage('pdi')" id="nav-pdi">Personal Digital Identity</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INTRO PAGE -->
+    <div class="page active" id="page-intro">
+      <section class="intro-section">
+        <h2>Intro</h2>
+
+        <h3 class="intro-subheading">Who I Am &amp; What This Project Is</h3>
+        <p>The Feminist Lens is a professional blog devoted to the critical examination of feminism as it emerges and vanishes in ten films from many genres and decades. This idea was inspired by a particular annoyance: the disconnect between seeing a movie that claims or doesn't claim to be feminist and truly comprehending what it is doing to you and society. Critical examination is essential in a time when "girl power" has become a marketing term and "empowerment" has been turned into a catchphrase. It is essential. I have chosen ten different films that would be considered interesting to all types of audiences — traditional feminist films and beyond.</p>
+        <p>My identity as a creator is rooted in the belief that the most valuable cultural criticism occupies a middle ground: analytically rigorous but personally alive, informed by theory but not imprisoned by it. I am a reader of feminist literature, a lover of cinema, and someone who thinks carefully about the tools — including artificial intelligence — that are reshaping how we encounter both.</p>
+
+        <h3 class="intro-subheading">The Problem This Blog Solves</h3>
+        <p>Without the critical frameworks to assess what they are viewing, a sizable and active online community of film enthusiasts and casual viewers frequently consume films marketed as feminist. Hot takes can be found on social media in the form of quick snippets, which can be either uncritical admiration for a female lead or scathing, often vicious criticism. A critical middle ground — writing that is prepared to stay with a film's complexity, ask why we like something that might be failing us, and have faith in the audience to look past the obvious — is nearly completely lacking.</p>
+        <p>The Feminist Lens exists to fill that space. A blog is the right form for this project: it offers depth and nuance that a tweet simply cannot, while remaining accessible to readers who have never opened a feminist theory textbook. This is not a lecture. It is a dialogue — and the blog's interactive homepage design reflects that, inviting readers to choose their own entry point into the material.</p>
+
+        <h3 class="intro-subheading">Design Vision &amp; Audience</h3>
+        <p>The homepage will feature dynamic, clickable elements that allow each visitor to choose where to begin. A reader interested in how contemporary science fiction handles female autonomy will find a different entry point than a reader seeking a critique of 1990s romantic comedies. Giving readers the freedom to choose transforms the blog from a monologue into a conversation — an editorial philosophy as much as a design decision.</p>
+        <p>The intended audience is the broad community of film enthusiasts and casual viewers who engage with "feminist" content online but may lack the analytical tools to interrogate what they are watching. They are curious, opinionated, and often frustrated by the shallowness of the conversation. It is not limited to gender, race, age, or any other deemed limitation to want to understand feminism. They do not want to be lectured to — they want to be given something to think with.</p>
+
+        <h3 class="intro-subheading">Positioning: What Already Exists &amp; Where I Fit</h3>
+        <p>Strong parallels may be identified when analyzing the current landscape, and they have all shown a sincere desire for feminist cinema review. Each contributes in a significant way. However, they can also come across as excessively clinical or elevated — great in theory but lacking the messiness and texture of real movies as beloved cultural artifacts.</p>
+        <p>The Feminist Lens will blend the relatability of a personal review with scholarly concepts like power dynamics, the male gaze, and intersectionality — producing a more intimate, approachable voice. It will examine what these films are doing and ask the harder question: why do we keep watching them, even when they fall short? The critical eye here is not a scalpel but a conversation.</p>
+
+        <h3 class="intro-subheading">The Role of Artificial Intelligence</h3>
+        <p>One of the most compelling threads running through this project is an interest in what artificial intelligence can and cannot do with feminist film analysis. AI will serve as both a research tool and a foil. AI-generated readings of feminist tropes in film will be placed alongside human analysis — and the differences between them will themselves become part of the story the blog tells.</p>
+        <p>Will an AI notice the subtle shifts in power that a human viewer feels before they can name? Will it flatten the historical complexity of a film into a checklist of surface-level feminist tropes? These are not rhetorical questions. They are the genuine inquiry at the heart of this project — one that positions The Feminist Lens at the intersection of film criticism, feminist theory, and the technological instruments shaping how we make meaning in the present moment.</p>
+        <p>The Feminist Lens is both a learning experience for its author and an educational resource for its readers — proof that the most interesting place to stand is always in the complicated middle.</p>
+
+      </section>
+    </div>
+
+    <!-- BLOGS PAGE -->
+    <div class="page" id="page-blogs">
+      <section class="films-section">
+        <h2>Blogs</h2>
+        <div class="film-grid">
+
+          <article class="film-card">
+            <div class="film-number">01</div>
+            <div class="film-info">
+              <h3 class="film-title">Mulan</h3>
+              <p class="film-year">1998 · Tony Bancroft &amp; Barry Cook</p>
+              <p class="film-excerpt">Disney's Mulan boldly challenges traditional gender roles as a young woman disguises herself as a soldier to save her family and her country. This analysis explores how the film uses identity, sacrifice, and honor to question what it truly means to bring glory — not to a family name, but to oneself.</p>
+              <a href="#" class="read-more" onclick="showBlog(1)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/Mulan.jpeg" alt="Mulan movie poster" />
+            </div>
+          </article>
+
+          <article class="film-card">
+            <div class="film-number">02</div>
+            <div class="film-info">
+              <h3 class="film-title">On the Basis of Sex</h3>
+              <p class="film-year">2018 · Mimi Leder</p>
+              <p class="film-excerpt">A biographical drama following Ruth Bader Ginsburg's early legal career and her landmark fight against gender discrimination. This piece examines how the film depicts the systemic barriers women faced in professional spaces and how one case became the foundation for sweeping legal change.</p>
+              <a href="#" class="read-more" onclick="showBlog(2)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/Basis.jpeg" alt="On the Basis of Sex movie poster" />
+            </div>
+          </article>
+
+          <article class="film-card">
+            <div class="film-number">03</div>
+            <div class="film-info">
+              <h3 class="film-title">The Imitation Game</h3>
+              <p class="film-year">2014 · Morten Tyldum</p>
+              <p class="film-excerpt">While primarily Alan Turing's story, Joan Clarke's presence is a quiet act of resistance against a world that refused to take women seriously in science and intelligence. This analysis examines her sidelined genius and what her story reveals about gender and institutional exclusion.</p>
+              <a href="#" class="read-more" onclick="showBlog(3)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/The Imitation Game.jpeg" alt="The Imitation Game movie poster" />
+            </div>
+          </article>
+
+          <article class="film-card">
+            <div class="film-number">04</div>
+            <div class="film-info">
+              <h3 class="film-title">The Hunger Games</h3>
+              <p class="film-year">2012 · Gary Ross</p>
+              <p class="film-excerpt">Katniss Everdeen redefined the female action hero for a generation — not through romance or beauty, but through survival, sacrifice, and moral complexity. This analysis looks at how the film frames female strength within systems of power, surveillance, and spectacle.</p>
+              <a href="#" class="read-more" onclick="showBlog(4)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/The Hunger Games.png" alt="The Hunger Games movie poster" />
+            </div>
+          </article>
+
+          <article class="film-card">
+            <div class="film-number">05</div>
+            <div class="film-info">
+              <h3 class="film-title">Captain America: The First Avenger</h3>
+              <p class="film-year">2011 · Joe Johnston</p>
+              <p class="film-excerpt">Peggy Carter stands as one of Marvel's most quietly feminist figures — a woman commanding respect in a wartime military landscape dominated by men. This analysis considers how her character both challenges and operates within the patriarchal structures of the MCU's World War II setting.</p>
+              <a href="#" class="read-more" onclick="showBlog(5)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/Captain America.png" alt="Captain America: The First Avenger movie poster" />
+            </div>
+          </article>
+
+          <article class="film-card">
+            <div class="film-number">06</div>
+            <div class="film-info">
+              <h3 class="film-title">Little Women</h3>
+              <p class="film-year">2019 · Greta Gerwig</p>
+              <p class="film-excerpt">Greta Gerwig's adaptation of Louisa May Alcott's novel is a meditation on female ambition, art, and the cost of independence. This piece explores how Gerwig reframes the March sisters' stories as urgent and contemporary, giving voice to women who refused to let marriage define their worth.</p>
+              <a href="#" class="read-more" onclick="showBlog(6)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/Little Women.png" alt="Little Women movie poster" />
+            </div>
+          </article>
+
+          <article class="film-card">
+            <div class="film-number">07</div>
+            <div class="film-info">
+              <h3 class="film-title">Pride &amp; Prejudice</h3>
+              <p class="film-year">2005 · Joe Wright</p>
+              <p class="film-excerpt">Elizabeth Bennet's sharp wit and refusal to marry for anything less than love was quietly radical in Regency England — and remains compelling today. This analysis examines how the film navigates class, economic dependency, and female self-determination through Austen's enduring lens.</p>
+              <a href="#" class="read-more" onclick="showBlog(7)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/Pride and Prejudice.png" alt="Pride and Prejudice movie poster" />
+            </div>
+          </article>
+
+          <article class="film-card">
+            <div class="film-number">08</div>
+            <div class="film-info">
+              <h3 class="film-title">Beauty and the Beast</h3>
+              <p class="film-year">2017 · Bill Condon</p>
+              <p class="film-excerpt">The live-action remake gave Belle a stronger sense of agency and intellect, positioning her as an inventor's daughter and village outsider. This analysis asks how much the update truly advances feminist ideals — and where the tension between romance and autonomy still lingers.</p>
+              <a href="#" class="read-more" onclick="showBlog(8)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/Beauty and the Beast.png" alt="Beauty and the Beast movie poster" />
+            </div>
+          </article>
+
+          <article class="film-card">
+            <div class="film-number">09</div>
+            <div class="film-info">
+              <h3 class="film-title">The Help</h3>
+              <p class="film-year">2011 · Tate Taylor</p>
+              <p class="film-excerpt">Set in 1960s Mississippi, The Help raises essential questions about race, labor, and whose feminist story gets centered. This analysis engages critically with the film's portrayal of Black domestic workers, the white savior narrative, and what intersectional feminism demands of storytelling.</p>
+              <a href="#" class="read-more" onclick="showBlog(9)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/The Help.png" alt="The Help movie poster" />
+            </div>
+          </article>
+
+          <article class="film-card">
+            <div class="film-number">10</div>
+            <div class="film-info">
+              <h3 class="film-title">Erin Brockovich</h3>
+              <p class="film-year">2000 · Steven Soderbergh</p>
+              <p class="film-excerpt">Based on a true story, Erin Brockovich follows a twice-divorced, unemployed mother who single-handedly builds one of the largest class action lawsuits in U.S. history. This analysis looks at how the film reclaims femininity as a tool of power while confronting class bias and institutional indifference.</p>
+              <a href="#" class="read-more" onclick="showBlog(10)">Read Here</a>
+            </div>
+            <div class="film-poster">
+              <img src="images/Erin Brockovich.jpeg" alt="Erin Brockovich movie poster" />
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- KEY WORDS/DEFINITIONS PAGE -->
+    <div class="page" id="page-contact">
+      <section class="contact-section">
+        <h2>Key Words/Definitions</h2>
+        <dl class="keywords-list">
+
+          <div class="keyword-entry">
+            <dt>Feminism</dt>
+            <dd>A broad political and theoretical framework concerned with understanding and dismantling the systems, structures, and cultural norms that subordinate women and restrict gender expression for everyone. It encompasses a wide spectrum of approaches, from personal acts of resistance to structural and legislative reform, and recognizes that gender-based oppression shapes the lives of all people, not only women.</dd>
+          </div>
+
+          <div class="keyword-entry">
+            <dt>Intersectionality</dt>
+            <dd>A framework coined by legal scholar Kimberlé Crenshaw in 1989 to describe how overlapping systems of race, gender, and class compound one another to create distinct and layered forms of disadvantage. Rather than treating identity categories as separate, intersectionality insists that they operate simultaneously, producing experiences of oppression that cannot be fully understood by examining any single axis alone.</dd>
+          </div>
+
+          <div class="keyword-entry">
+            <dt>Institutional Feminism</dt>
+            <dd>A theoretical approach that holds lasting gender equality requires transforming not just cultural attitudes but the laws, policies, and structures that formally codify inequality. Change, in this view, must be pursued from within existing systems, through legislation, litigation, and policy, rather than through cultural shift alone.</dd>
+          </div>
+
+          <div class="keyword-entry">
+            <dt>Relational Autonomy</dt>
+            <dd>A feminist philosophical concept describing genuine freedom as something achieved not in isolation but through relationships that recognize and respect a person's full humanity. It challenges the notion that autonomy means radical independence, arguing instead that selfhood is shaped and sustained through connections that honor rather than diminish one's agency.</dd>
+          </div>
+
+        </dl>
+      </section>
+    </div>
+
+    <!-- PERSONAL DIGITAL IDENTITY PAGE -->
+    <div class="page" id="page-pdi">
+      <section class="intro-section">
+        <h2>Personal Digital Identity</h2>
+
+        <h3 class="intro-subheading">Who I Am</h3>
+        <p>Hey! My name is Brynne Hurt and I am a sophomore at Syracuse University dual majoring in Magazine, News, &amp; Digital Journalism, and Writing, Rhetoric, &amp; Composition, with a minor in Philosophy.</p>
+
+        <h3 class="intro-subheading">The Digital World &amp; My Identity</h3>
+        <p>I think I would like to say that the digital world hasn't influenced me, and I am an independent thinker in every way. But, realistically, that isn't true. The digital world has been a tool to shape my understanding of myself in ways that are subtle and also strongly undeniable. While I would love to think of myself as a completely independent thinker, the continuous presence of the digital world has actually even shaped some of my personality. My perception of myself has always been pretty constant — my mom would say I always had a strong sense of self, and was strong willed, even stubborn. But my identity isn't just what I project from my own human body; it is the pictures I post of myself and what I am doing in them, it is the people I follow or chose not to, and it is the things I like and dislike from what other people's identities create on my own accounts.</p>
+        <p>My perception of myself and how I think others perceive me is influenced by the stuff I consume, the people I follow, and the ways I express myself online. Digital platforms' algorithms, trends, and social conventions subtly influence my tastes, beliefs, and even sense of community.</p>
+
+        <h3 class="intro-subheading">The Curated Self: What the Screen Shows</h3>
+        <p>Through the screen, I often see a curated version of myself. My digital identity is intentional — it reflects the parts of me that I am comfortable sharing publicly. Whether it's through Instagram posts, LinkedIn, or academic writing, I present a version of myself that aligns with how I want to be perceived: thoughtful, creative, and driven. However, this version is inevitably incomplete. The screen filters out the messier, more uncertain aspects of my identity, leaving behind something more polished and controlled.</p>
+        <p>It can be siloed depending on the account. LinkedIn is purely academic and professional, while Instagram is more fun and silly while being interest and activity based. And my writing, I would like to think, is a mix of both — it shows my personality through my opinions and conviction while also being portrayed in a polished way.</p>
+
+        <h3 class="intro-subheading">An Expansive Digital World</h3>
+        <p>My digital world is expansive and layered. It includes social media platforms where I connect with friends and express myself, as well as professional spaces like LinkedIn where I build my academic and career identity. Beyond personal devices, the digital world is embedded in physical spaces too — through screens around campus and constant connectivity that blurs the line between online and offline life.</p>
+
+        <h3 class="intro-subheading">Searching My Own Name</h3>
+        <p>When I search my name in an incognito tab, I am confronted with how I exist publicly in the digital world. Depending on what appears — whether it's a LinkedIn profile, social media accounts, tagged photos, or even USAClimbing results from my time as a competitive rock climber — I get a sense of how accessible and visible I am to others. If it takes time to find accurate information about me, that suggests a level of privacy. If my profiles appear quickly, it reflects a more established digital presence. This process raises questions about control: Is this how I want to show up? Does my digital footprint align with how I see myself, or how I want others to see me?</p>
+
+        <h3 class="intro-subheading">Identity as Interaction</h3>
+        <p>Reflecting on analyzing classmates' social media profiles and my own online habits, I realize how much identity is shaped through interaction. Who I follow, what I engage with, and what I choose to share all reinforce certain aspects of my identity. These choices are not neutral — they reflect my values, interests, and social positioning, but they also influence them over time. It is a domino effect, and I hope that it never turns into an echo chamber. That is a fear, because social media becomes both a mirror and a feedback loop.</p>
+
+      </section>
+    </div>
+
+    <!-- =============================================
+         BLOG POST PAGES (01–10)
+         ============================================= -->
+
+    <!-- BLOG 01 — MULAN -->
+    <div class="page" id="page-blog-1">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">01</div>
+            <div class="post-header-text">
+              <h1 class="post-title">Beyond the Armor: Feminism in Mulan</h1>
+              <p class="post-meta">1998 · Tony Bancroft &amp; Barry Cook</p>
+              <p class="post-tagline">What does it mean to prove your worth in a world that has already decided your value? Disney's Mulan (1998) doesn't just ask that question — it weaponizes it.</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              The film Mulan (1998) follows a young woman who disguises herself as a man to fight in place of her injured father in war, both wanting to bring honor to her family, but also acting in a way that could have shamed them. The Male Gaze, a theory first proposed by film critic Laura Mulvey in 1975, is one of the most helpful lenses to use in this situation, which is ripe for feminist study. Mulvey argued that mainstream film is built around a heterosexual, masculine viewpoint, portraying women as objects to be observed rather than as autonomous people. Mulan dismantles this in silence.
+            </p>
+            <p>
+              Mulan functions completely outside of the male gaze for the majority of the movie since everyone believes she is a man. Action, strategy, and consequence are the driving forces behind her story. Her accomplishments, not her appearance, are what determine her worth — and she achieved them despite being a woman in a purely male setting of training for battle, and eventually battle itself. She is never framed as something to be desired or decorated; she is simply a soldier, evaluated on the same terms as every man around her.
+            </p>
+            <p>
+              This shift is quietly radical. By removing the awareness of her femininity from both the characters and, crucially, the camera, the film creates space for her to simply exist as a person with agency.
+            </p>
+            <p>
+              The narrative does not penalize her femininity when her identity is ultimately exposed — it proves it. Instead of using physical force to defeat Shan Yu, she uses her creativity and resourcefulness, qualities that had been dismissed and overlooked precisely because she was a woman, yet are later revealed to be more valuable than brute strength alone. This is the film's most pointed feminist argument: the traits that a patriarchal society conditions women to suppress are the very traits that save the day.
+            </p>
+            <p>
+              This brought honor to her family — the same goal she was originally supposed to achieve by being the submissive, quiet, delicate, and obedient girl the matchmaker demanded. When she failed that standard, the matchmaker declared she would never bring honor to her family. The film's ending is a direct rebuttal to that verdict.
+            </p>
+            <p>
+              Importantly, the movie also illustrates how patriarchy restricts everyone, not just women. Shang carries the immense burden of his father's legacy, performing a version of strength and leadership that leaves little room for doubt or vulnerability. The male troops are similarly confined to narrow notions of honor and worth. None of them are fully free. Mulan's triumph came from opposing the system that limited them all, not at the expense of men, but in a way that ultimately liberates them too. Shang is able to respect and follow her lead only once the rigid hierarchy of gender has been broken open.
+            </p>
+            <p>
+              Mulan's story of concealment, performance, and ultimate self-discovery also carries significance for LGBTQ+ viewers that extends well beyond the setting of historical China. The experience of hiding who you are, performing an identity that doesn't quite fit, and the fear and relief of being truly seen resonates far beyond its narrative context.
+            </p>
+            <p>
+              Mulan recognizes that everyone is affected by gender-based limitations, and that dismantling them is, ultimately, everyone's triumph.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOG 02 — ON THE BASIS OF SEX -->
+    <div class="page" id="page-blog-2">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">02</div>
+            <div class="post-header-text">
+              <h1 class="post-title">The Fight for Equal Ground: Feminism in On the Basis of Sex</h1>
+              <p class="post-meta">2018 · Mimi Leder</p>
+              <p class="post-tagline">What happens when the law itself is the enemy? On the Basis of Sex (2018) answers that question through the early career of Ruth Bader Ginsburg — a woman who didn't just navigate a system designed to exclude her, but methodically took it apart from the inside.</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              The film On the Basis of Sex is grounded in legal reality, but it speaks a deeply feminist language. A useful theoretical framework here is Institutional Feminism — the idea that lasting gender equality requires changing not just attitudes, but the structures and laws that codify inequality. This philosophy is fully embodied by Ruth Bader Ginsburg. Rather than working around discriminatory laws or finding quiet workarounds, she takes direct aim at them. And crucially, she argues that gender-based legal inequalities don't only harm women — they harm everyone, including the men those laws were ostensibly designed to protect.
+            </p>
+            <p>
+              That last point is what makes the film so compelling for a broad audience. The landmark case at the film's center involves a man — Charles Moritz, a bachelor denied a tax deduction for caring for his elderly mother simply because the law assumed caregiving was inherently a woman's role. A man doing what any devoted child might do was penalized for it, because the legal system had no category for him. Ginsburg's genius was recognizing that sexist laws don't just oppress women; they trap men in rigid roles too. By arguing for Moritz, she was arguing for everyone.
+            </p>
+            <p>
+              This is precisely why institutional feminism resonates well beyond women. The Moritz case is a near-perfect illustration of how dismantling gender-based law sometimes requires arguing on behalf of men first. Ginsburg understood that a court more instinctively comfortable defending a man's rights could be used as a vehicle to expand rights for all. It wasn't a compromise of her principles — it was a strategy in service of them. By proving the law was absurd when applied to Charles Moritz, she exposed how absurd it had always been when applied to women. For male viewers, this reframes feminism entirely: it isn't about elevating women at men's expense, but about freeing everyone from the rigid expectations that a calcified legal system imposed on people based solely on their gender. The enemy was never men. It was the system that told both men and women exactly who they were allowed to be.
+            </p>
+            <p>
+              For LGBTQ+ viewers, the film's core message carries obvious and powerful resonance. The legal principles RBG fought to establish — that the government has no legitimate interest in legislating gender roles or policing identity — became foundational to later landmark rulings on LGBTQ+ rights. The arguments she made in the 1970s laid groundwork that would take decades to fully bear fruit, but the seeds were unmistakably hers. Watching the film through that lens transforms it from a period legal drama into something that feels strikingly present-tense.
+            </p>
+            <p>
+              On the Basis of Sex is not a quiet film about quiet progress. It's a film about the particular kind of courage it takes to walk into a room where you were never meant to be welcome, make your argument anyway, and refuse to leave until someone listens. Ruth Bader Ginsburg did not wait for the culture to catch up. She used the law — that dense, slow, often hostile institution — as the instrument of change itself.
+            </p>
+            <p>
+              The armor looks different here. There's no sword, no borrowed uniform, no battlefield in the conventional sense. But the spirit is the same one Mulan would recognize immediately: the refusal to accept that the limits placed on you were ever truly yours to begin with.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOG 03 — THE IMITATION GAME -->
+    <div class="page" id="page-blog-3">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">03</div>
+            <div class="post-header-text">
+              <h1 class="post-title">The Invisible System: Feminism and Belonging in The Imitation Game</h1>
+              <p class="post-meta">2014 · Morten Tyldum</p>
+              <p class="post-tagline">What happens when brilliance isn't enough to buy you a seat at the table? The Imitation Game (2014) answers that question through the intertwined stories of Alan Turing and Joan Clarke — two people who didn't lack the talent to belong, only the identity the system demanded of them.</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              On its surface, The Imitation Game is a film about codebreaking. Beneath that, it's a film about who gets to belong — and what happens to those who don't fit the mold.
+            </p>
+            <p>
+              The 2014 film follows Alan Turing's efforts to crack the Nazi Enigma machine during World War II, but one of its most quietly powerful threads belongs to Joan Clarke, played by Keira Knightley. Joan's introduction is deceptively simple: she solves a puzzle faster than the men around her, including Turing himself. It's a small moment, but a loaded one. The puzzle is a leveller. It doesn't know her gender, her social standing, or what year it is. It only measures intelligence — and on that measure, Joan is Turing's equal.
+            </p>
+            <p>
+              This matters precisely because it happens outside the usual social choreography. Turing doesn't extend Joan a hand up out of politeness or progressive politics. He notices her because she beat his time. In that moment, her intellectual belonging is established on purely meritocratic terms, free from the scaffolding of expectation that surrounds her everywhere else.
+            </p>
+            <p>
+              But the scaffolding is always there, waiting. Joan's family makes this plain. At twenty years old, they remind her, she should be looking for a husband — not a career in government cryptography. The pressure isn't cruel, exactly. It's systemic. It comes from people who love her and genuinely believe they're steering her toward safety and happiness. That's what makes it so insidious: the walls are padded.
+            </p>
+            <p>
+              Joan's response is one of the film's most quietly radical choices. She agrees to marry Alan Turing, knowing he is gay. It's a pragmatic arrangement, a way to remain in the work she loves without having to fight the world head-on. But the film holds this moment with real complexity. Joan is resisting the system — finding a workaround, refusing to simply leave — while simultaneously forfeiting something of herself. She is working within the rules rather than dismantling them. It keeps her in the room, but at the cost of the life she might otherwise have chosen openly. Resistance and compromise, folded into the same decision.
+            </p>
+            <p>
+              Turing's story mirrors hers in a different register. His prosecution for "gross indecency" — his homosexuality — is framed by the film as a stripping away of belonging. The state-imposed chemical castration he undergoes is not just a punishment; it's a symbolic emasculation. Masculinity, in the world of the film, functions as a kind of currency. It determines who gets to do serious intellectual work, who is taken seriously, who is allowed to be fully human in public. To be non-masculine — whether through sexuality, eccentricity, or gender — is to become the other, pushed to the margins of legitimacy.
+            </p>
+            <p>
+              This is where the film's feminist and queer critiques converge most powerfully: in the idea that the same invisible system governs both Joan and Alan. Neither is safe from it. And the film's most haunting implication comes in its closing moments. Had they simply married one another — conformed to the structure — both would have been absorbed into respectability. Joan would have had her career. Alan might have lived. The system would have accepted them, because they would have looked, from the outside, like what the system wanted.
+            </p>
+            <p>
+              That's the real subject of The Imitation Game: not the Enigma machine, but the other machine — the social one, silent and pervasive, that decides who counts. It takes two brilliant people to make it visible, and it destroys them both to make its point. The code they couldn't crack was the one written around them.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOG 04 — THE HUNGER GAMES -->
+    <div class="page" id="page-blog-4">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">04</div>
+            <div class="post-header-text">
+              <h1 class="post-title">The Girl on Fire: Feminism and the Cost of Survival in <em>The Hunger Games</em></h1>
+              <p class="post-meta">2012 · Gary Ross</p>
+              <p class="post-tagline">What happens when the system that was built to break you decides, instead, to brand you — when survival isn't enough, and the world that tried to destroy you turns around and hands you a torch, expecting you to carry it on its terms?</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              <em>The Hunger Games</em> (2012) follows Katniss Everdeen, a teenager from the impoverished District 12 who volunteers to take her younger sister's place in the annual televised death match known as the Hunger Games — a spectacle designed by the Capitol to remind its subjugated districts who holds the power. On its surface, it is a story about survival. Beneath that, it is a story about what survival costs women when the world decides to watch.
+            </p>
+            <p>
+              Katniss is not a revolutionary when we meet her. She is a provider. Every morning she slips under the fence and hunts in the forbidden woods beyond the district — not for glory, not for protest, but because her family is hungry. She has been carrying this weight since her father died and her mother retreated into grief, leaving a teenage girl to quietly become the head of household. The film establishes her competence without ceremony. She fits an arrow. She trades game at the Hob. She takes the tessera — additional entries into the reaping in exchange for meager grain rations — to stretch what little they have. Her skill is not performed. It simply exists, uncelebrated, because it has to.
+            </p>
+            <p>
+              This matters because it makes her feminism incidental rather than ideological. Katniss does not arrive in the Capitol with a manifesto. She arrives trying not to die.
+            </p>
+            <blockquote class="pull-quote">
+              The moment that ignites the districts is not tactical. It is grief. It is the one thing she cannot help.
+              <cite>— Reel Feminism</cite>
+            </blockquote>
+            <p>
+              Laura Mulvey's theory of the male gaze — the idea that mainstream storytelling is built around a masculine viewpoint that frames women as objects to be observed — is worth holding up against Katniss's arc. Because for much of the film, Katniss is explicitly being watched. The Capitol audiences are hungry for spectacle. Haymitch advises her to make herself desirable, likable, to perform a version of herself the viewers will want to protect. Effie Trinket smooths her edges. Cinna dresses her in fire. The machinery of the Capitol actively tries to transform her into something decorative — something that fits the system's frame.
+            </p>
+            <p>
+              And here is where the film does something quietly radical: Katniss keeps failing at it. Not in a way that reads as defiance, exactly. It reads as incapacity. She cannot flirt convincingly on command. She cannot manufacture warmth for the cameras. When she finally moves an audience — in the moment she covers Rue's body with flowers after the young girl from District 11 dies in her arms — it is not a calculated performance. It is grief. It is the one thing she cannot help. The moment that ignites the districts is not tactical. It is human.
+            </p>
+            <p>
+              The film also understands, as <em>The Imitation Game</em> and <em>Mulan</em> understand in their own registers, that patriarchal systems do not only restrict women — they restrict everyone inside them. Peeta, warm and emotionally fluent where Katniss is guarded, is coded in ways the Capitol finds legible: gentle, romantic, unthreatening. He is useful as a love interest, as a narrative device, as something that makes Katniss easier for audiences to access. He plays the game more naturally than she does, but he is still playing it. Neither of them is free. The arena does not only kill tributes. It turns all of them into content.
+            </p>
+            <p>
+              What Katniss does — and what the film allows her to do without framing it as exceptional — is refuse the ending the system writes for her. When the Capitol reverses the rule change that would have allowed two victors, she does not collapse into compliance. She holds out the berries. It is not a rousing speech. It is a refusal, small and quiet, to let the machine have the last word. The Capitol wanted a victor; she gives them a problem.
+            </p>
+            <p>
+              This is the feminist argument <em>The Hunger Games</em> makes most forcefully: that the system does not just demand your obedience — it demands your performance of it. Katniss can survive the arena. What she cannot do, and will not do, is pretend the arena is something other than what it is.
+            </p>
+            <p>
+              The girl on fire did not choose her symbol. But she chose what she would not burn for.
+            </p>
+          </div>
+          <footer class="post-footer">
+            <p class="post-footer-label">Tags</p>
+            <div class="post-tags">
+              <span class="tag">Male Gaze</span>
+              <span class="tag">Survival &amp; Spectacle</span>
+              <span class="tag">Dystopia</span>
+              <span class="tag">Laura Mulvey</span>
+              <span class="tag">2010s</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOG 05 — CAPTAIN AMERICA -->
+    <div class="page" id="page-blog-5">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">05</div>
+            <div class="post-header-text">
+              <h1 class="post-title">The Woman Who Wouldn't Wait: Feminism and Worth in Captain America: The First Avenger</h1>
+              <p class="post-meta">2011 · Joe Johnston</p>
+              <p class="post-tagline">What does it mean to be taken seriously in a world that has already decided you aren't?</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              Captain America: The First Avenger raises that question — and answers it, surprisingly, not through its hero, but through the woman who stands beside him. On its surface, the film is a wartime adventure about a scrawny kid from Brooklyn who becomes a super-soldier. Beneath that, it's a story about who is allowed to fight, who is deemed capable of courage, and who gets to define those terms. And at the centre of that question stands Peggy Carter.
+            </p>
+            <p>
+              Peggy is introduced without fanfare. She's already there, already in command, already correcting a soldier twice her size for attempting to undermine her authority. She doesn't ask for the room's respect — she has it or she doesn't, and she moves accordingly either way. Feminist film theorist Laura Mulvey's concept of the male gaze is worth invoking here: in most genre cinema of this kind, women exist to be looked at, assessed, desired. Peggy disrupts that framework almost immediately. The camera follows her as an agent, not an object. She looks; she evaluates; she acts.
+            </p>
+            <p>
+              The film sets up its gender dynamics carefully. The Strategic Scientific Reserve is an almost entirely male institution. Women are nurses, love interests, background figures. Peggy is the exception — and crucially, the film never quite explains why she is the exception. There is no origin scene for her authority, no moment where she has to prove herself to earn her place. She is simply there, doing the job. That absence of justification is itself a kind of feminist statement. She is competent not as a novelty, but as a baseline — and the film has the discipline not to make a fuss about it.
+            </p>
+            <p>
+              Her relationship with Steve Rogers complicates and deepens this. Steve, before his transformation, is something the film treats with unexpected seriousness: a man who has never been able to use physical dominance as social currency. He is small, asthmatic, perpetually underestimated. In other words, he has spent his whole life experiencing something structurally adjacent to what Peggy experiences — the gap between what you are and what the world allows you to be. Their early connection is rooted in this shared grammar of exclusion. They recognise something in each other that the louder, larger world around them doesn't see.
+            </p>
+            <blockquote class="pull-quote">
+              She is competent not as a novelty, but as a baseline — and the film has the discipline not to make a fuss about it.
+            </blockquote>
+            <p>
+              After Steve's transformation, the film makes a choice that deserves credit: Peggy does not diminish. She remains his equal in every exchange that matters. When she shoots at him during a training demonstration — unannounced, with real bullets — it is not framed as comic jealousy. It is a professional assessment. She is testing whether the transformation has changed what she cares about: his judgment, his instincts, his character. It hasn't. She files the information and moves on. This is not the behaviour of a love interest. It is the behaviour of a peer.
+            </p>
+            <p>
+              And yet the film does not fully escape its own constraints. Peggy remains, ultimately, in a supporting role to a male narrative. Her expertise informs the mission; she does not lead it. Her emotional arc is tethered to Steve's survival. The final radio exchange between them — tender, incomplete, cut short — is devastating, but it is devastating in service of his story, not hers. She is extraordinary within the frame the film gives her, but the frame itself still belongs to him.
+            </p>
+            <p>
+              This tension — between a character written with genuine respect and a structure that still centres masculinity — is where the film is most honest about its own limitations. Peggy Carter is not a progressive trophy. She is a person, rendered with care and complexity, operating inside a system that was not built for her, doing what people in that position have always done: working with what she has, in the space she is given, better than anyone else in the room.
+            </p>
+            <p>
+              Captain America: The First Avenger doesn't pretend the world is fair. It shows us a woman who knows it isn't — and fights anyway. That's not a small thing. That's the whole point.
+            </p>
+          </div>
+          <footer class="post-footer">
+            <p class="post-footer-label">Tags</p>
+            <div class="post-tags">
+              <span class="tag">Male Gaze</span>
+              <span class="tag">Marvel</span>
+              <span class="tag">Genre Cinema</span>
+              <span class="tag">Laura Mulvey</span>
+              <span class="tag">Female Agency</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOG 06 — LITTLE WOMEN -->
+    <div class="page" id="page-blog-6">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">06</div>
+            <div class="post-header-text">
+              <h1 class="post-title">More Than Wives and Mothers: Feminism in Little Women (2019)</h1>
+              <p class="post-meta">2019 · Greta Gerwig</p>
+              <p class="post-tagline">What does a woman owe the world — and what does the world owe her in return? Greta Gerwig's <em>Little Women</em> refuses to let that question go unanswered.</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              Gerwig's adaptation of Louisa May Alcott's beloved novel follows the four March sisters — Jo, Meg, Amy, and Beth — as they come of age in Civil War-era America, each navigating love, ambition, loss, and the suffocating constraints placed on women of their time. The film is a masterclass in feminist filmmaking not because it loudly announces itself as such, but because it builds its arguments into the very structure of how it tells its story.
+            </p>
+            <p>
+              One of the most useful tools for measuring feminist representation in film is the Bechdel Test, introduced by cartoonist Alison Bechdel in 1985. A film passes if it contains at least two named women who speak to each other about something other than a man. By that standard, <em>Little Women</em> doesn't merely pass — it overwhelms the test entirely. The March sisters spend the majority of the film talking to one another about art, money, ambition, illness, independence, and identity. Their conversations are the heart of the film. Men exist in their world, but they do not define it.
+            </p>
+            <p>
+              At the center of everything is Jo March, arguably one of American literature's first truly feminist protagonists. Jo wants to write, to travel, to exist on her own terms in a world that keeps offering her only one acceptable future: marriage. "I'm so sick of people saying that love is just all a woman is fit for," she declares with a fury that feels as contemporary as it does period-appropriate. Gerwig frames Jo's ambition not as a flaw to be corrected but as her defining virtue — wild, ungovernable, and entirely her own.
+            </p>
+            <blockquote class="pull-quote">
+              "I'm so sick of people saying that love is just all a woman is fit for."
+              <cite>— Jo March, <em>Little Women</em> (2019)</cite>
+            </blockquote>
+            <p>
+              What makes Gerwig's adaptation particularly sharp is its non-linear structure. By interweaving the sisters' girlhood with their adult lives, the film draws a direct line between the dreams a girl is allowed to have and the compromises a woman is forced to make. We see joy and constraint simultaneously — not as separate chapters, but as lived truths existing in the same breath. This is a deliberate feminist statement: women's lives are not a linear march toward marriage and motherhood. They are full, complicated, and ongoing.
+            </p>
+            <p>
+              Amy March, long dismissed by readers as the shallow villain of the story, receives perhaps the most radical rehabilitation in Gerwig's hands. Her famous speech about the economics of marriage — "I'm just a woman, and as a woman I have no way to make money, not enough to earn a living and support my family. And if I had my own money, which I don't, that money would belong to my husband the moment we got married" — reframes her choices not as vanity but as survival strategy. Amy understands the system she lives inside with clear-eyed precision. Her pragmatism is not a moral failing; it is intelligence responding to limited options.
+            </p>
+            <p>
+              Meg, too, is treated with unusual respect. When she chooses domesticity over ambition, the film does not punish or pity her. Gerwig is careful to honor Meg's choice as a genuine one, made with full awareness of what she is accepting. This is feminism in its truest sense: not the insistence that all women must want the same things, but the radical idea that women should be free to want what they actually want.
+            </p>
+            <p>
+              Even the film's ending — in which Jo negotiates the terms of her own novel's publication, insisting that her heroine marry — is layered with meaning. Whether that ending is "real" or a commercial concession remains deliberately ambiguous. Gerwig gives us Jo triumphant and Jo complicit in the same moment, and trusts us to hold both truths at once.
+            </p>
+            <p>
+              <em>Little Women</em> argues that a woman's inner life — her ambition, her anger, her art, her grief — is not secondary material. It is the whole story.
+            </p>
+          </div>
+          <footer class="post-footer">
+            <p class="post-footer-label">Tags</p>
+            <div class="post-tags">
+              <span class="tag">Bechdel Test</span>
+              <span class="tag">Greta Gerwig</span>
+              <span class="tag">Period Drama</span>
+              <span class="tag">Female Ambition</span>
+              <span class="tag">Literary Adaptation</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOG 07 — PRIDE AND PREJUDICE -->
+    <div class="page" id="page-blog-7">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">07</div>
+            <div class="post-header-text">
+              <h1 class="post-title">More Than a Good Match: Feminism in Pride and Prejudice (2005)</h1>
+              <p class="post-meta">2005 · Joe Wright</p>
+              <p class="post-tagline">What does a woman owe a world that only wants to marry her off? Joe Wright's <em>Pride and Prejudice</em> answers that question through Elizabeth Bennet — a woman who doesn't just endure a society built to constrain her, but meets it with wit, refusal, and an unwillingness to pretend it deserves her compliance.</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              Joe Wright's <em>Pride and Prejudice</em> (2005), adapted from Jane Austen's 1813 novel, takes place in a society that has already answered that question with unsettling clarity: everything. Yet the film quietly, persistently refuses to let that answer stand. Through Elizabeth Bennet and the world she navigates, Wright's adaptation becomes something more than a Regency romance. It becomes a portrait of a woman who insists on existing on her own terms, in a world that has made those terms nearly impossible.
+            </p>
+            <p>
+              To understand the feminism at work in <em>Pride and Prejudice</em>, you first have to understand the trap. The Bennet girls do not simply want to get married — they must. With the family's estate entailed away from female inheritance, marriage is not a romantic ambition but a matter of economic survival. Mrs. Bennet's frantic matchmaking, so often played for comic effect, is rooted in a genuine and desperate logic: without a husband, her daughters face poverty. The film never lets us forget this. From the opening scene, the Bennet household buzzing with the arrival of eligible Mr. Bingley, material reality hovers beneath every drawing-room conversation.
+            </p>
+            <p>
+              Charlotte Lucas accepts Mr. Collins's proposal not out of love, but out of clear-eyed pragmatism. "I'm twenty-seven years old," she tells Elizabeth. "I've no money and no prospects. I'm already a burden to my parents." It is one of the most quietly devastating lines in the film, and it lands because Wright refuses to frame it as weakness. Charlotte is not foolish. She is rational in a world that has given her almost no room to be anything else.
+            </p>
+            <p>
+              Elizabeth Bennet exists in deliberate contrast to this world. She reads. She walks alone across muddy fields. She laughs at people who expect her to be dazzled by wealth or rank. Where Charlotte makes her peace with the system, Elizabeth refuses it — not through rebellion, but through the quiet persistence of her own standards. When Lady Catherine de Bourgh demands to know whether she will give up Mr. Darcy, Elizabeth replies with a composure that borders on defiance.
+            </p>
+            <blockquote class="pull-quote">
+              "He is a gentleman. I am a gentleman's daughter. So far we are equal."
+              <cite>— Elizabeth Bennet, <em>Pride and Prejudice</em> (2005)</cite>
+            </blockquote>
+            <p>
+              That line — so simple, so exact — is the ideological core of the film. Elizabeth does not claim superiority. She claims equality, in a world that has systematically denied it. She is not interested in performing deference for men who have not earned her respect, and she extends that refusal regardless of their fortune. This is not feminism as a manifesto. It is feminism as behavior — practiced quietly, persistently, in every refusal to simper, every raised eyebrow, every moment she holds her own in conversation with men who expect to dominate it.
+            </p>
+            <p>
+              That same insistence carries into the film's treatment of love itself. <em>Pride and Prejudice</em> makes a subtle but important argument about desire: that women are entitled to it. Elizabeth's eventual love for Darcy is not born from submission or rescue. It grows from a gradual, mutual reassessment — from the moment she witnesses his genuine generosity toward the Bingleys, his embarrassment over his own earlier pride, and his willingness to be changed by her opinion of him. Their relationship becomes a negotiation between two people who take each other seriously. This is quietly radical in a genre — and a period — where women were far more often the objects of male desire than its active, discerning subjects. Knightley's Elizabeth watches, evaluates, and chooses. She is never simply chosen.
+            </p>
+            <p>
+              Wright's adaptation does not pretend the world it depicts was fair. The constraints on the Bennet women are real, and the film honors that reality by not softening it into backdrop. But it also insists — through Elizabeth especially — that dignity and autonomy are possible even within a system designed to erase them. That insistence is the film's feminist argument, and it does not require a single speech to make it.
+            </p>
+            <p>
+              It lives in Keira Knightley's posture, in the mud on Elizabeth's hem, in every moment she refuses to become what the world has decided she should be.
+            </p>
+          </div>
+          <footer class="post-footer">
+            <p class="post-footer-label">Tags</p>
+            <div class="post-tags">
+              <span class="tag">Bechdel Test</span>
+              <span class="tag">Joe Wright</span>
+              <span class="tag">Period Drama</span>
+              <span class="tag">Female Autonomy</span>
+              <span class="tag">Literary Adaptation</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOG 08 — BEAUTY AND THE BEAST -->
+    <div class="page" id="page-blog-8">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">08</div>
+            <div class="post-header-text">
+              <h1 class="post-title">More than Just Her Beauty: Feminism in Beauty and the Beast (2017)</h1>
+              <p class="post-meta">2017 · Bill Condon</p>
+              <p class="post-tagline">What does it mean to be extraordinary in a world that only asks you to be decorative? Disney's <em>Beauty and the Beast</em> (2017) doesn't just pose that question — it builds a village around it.</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              The film follows Belle, a young woman living in provincial France, who is widely regarded by her neighbors as peculiar — not because she is unkind, but because she reads. When her father is imprisoned by a cursed Beast in an enchanted castle, she trades herself for his freedom, and discovers a world far more interesting than the one she left behind. The Male Gaze, a theory first introduced by film critic Laura Mulvey in 1975, is one of the most useful lenses through which to examine the film. Mulvey argued that mainstream cinema is constructed around a heterosexual, masculine viewpoint that reduces women to objects of observation rather than subjects of their own stories. <em>Beauty and the Beast</em> does not dismantle this framework with silence, as <em>Mulan</em> does — instead, it dismantles it through noise, through visibility, through a woman who refuses to be looked at the way the world expects.
+            </p>
+            <p>
+              Belle is conspicuous from the film's opening sequence. The village watches her, comments on her, and finds her wanting — not because she is inadequate, but because she exceeds what they have room for. She is too curious, too educated, too uninterested in performing the femininity the town has scripted for her. The town's most eligible man, Gaston, pursues her not out of genuine affection but out of possession — she is the most beautiful woman he has seen, and therefore the most desirable prize. His entire courtship is the Male Gaze made physical: he does not listen to her, he observes her. Her refusal of him is the film's first and most direct feminist argument: beauty is not consent, and visibility is not an invitation.
+            </p>
+            <p>
+              The 2017 adaptation, directed by Bill Condon, deliberately expands Belle's agency beyond her animated predecessor. This version of Belle is an inventor as well as a reader, someone who builds a washing machine to free up time for learning — a quiet act of rebellion that her neighbors find bizarre. The film frames her ingenuity not as charming eccentricity but as genuine intellectual capability, a trait the narrative consistently rewards. Where the world around her assigns value based on appearance and obedience, the Beast's enchanted castle assigns value based on curiosity and courage. The library he offers her is not a gift of romance — it is the first time anyone has offered her the correct currency.
+            </p>
+            <blockquote class="pull-quote">
+              Beauty is not consent, and visibility is not an invitation.
+            </blockquote>
+            <p>
+              The relationship between Belle and the Beast is also worth examining through a feminist lens precisely because of what it refuses to be. Rather than a straightforward rescuer-and-rescued dynamic, it functions as an intellectual negotiation. Belle does not soften the Beast through submission; she challenges him, corrects him, and holds him accountable. She teaches him to be better not by making herself smaller but by refusing to. The power between them shifts gradually, and it shifts because she insists upon herself. This mirrors what feminist scholars describe as relational autonomy — the idea that genuine freedom is not achieved in isolation, but through relationships that recognize and respect one's full personhood.
+            </p>
+            <p>
+              The film also draws attention to the ways patriarchy constrains the men within it. Gaston is not simply a villain; he is a man so entirely defined by dominance and performance that any perceived challenge to his superiority becomes an existential threat. His tragedy — and it is one — is that he has been shaped into someone incapable of understanding a woman who is not a mirror.
+            </p>
+            <p>
+              Belle's story ends not with rescue but with restoration. The enchantment broken, the world rearranged — not because she became what the village wanted, but because she never did.
+            </p>
+          </div>
+          <footer class="post-footer">
+            <p class="post-footer-label">Tags</p>
+            <div class="post-tags">
+              <span class="tag">Male Gaze</span>
+              <span class="tag">Relational Autonomy</span>
+              <span class="tag">Disney</span>
+              <span class="tag">Agency</span>
+              <span class="tag">Patriarchy</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOG 09 — THE HELP -->
+    <div class="page" id="page-blog-9">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">09</div>
+            <div class="post-header-text">
+              <h1 class="post-title">Whose Story Is It Anyway: Feminism in <em>The Help</em></h1>
+              <p class="post-meta">2011 · Tate Taylor</p>
+              <p class="post-tagline">What happens when the women who hold a household together are invisible to the household itself — when your hands are in someone else's kitchen, raising someone else's children, and still no one thinks to learn your last name?</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              What happens when the work that sustains a world goes unrecorded, when the tenderness you pour into other people's families leaves no trace in the history books, when the system that was built to erase you decides, instead, to act as though you were never there at all?
+            </p>
+            <p>
+              <em>The Help</em>, directed by Tate Taylor and based on Kathryn Stockett's 2009 novel, is set in Jackson, Mississippi, during the early 1960s — a world arranged with surgical precision to keep certain women in their place. The film follows Eugenia "Skeeter" Phelan, a white aspiring journalist who returns home from college to find her friends absorbed in the rituals of domesticity, and Aibileen Clark and Minny Jackson, two Black domestic workers whose labor, love, and labor-as-love quietly sustain the white families they serve. What emerges is a film about feminine solidarity — imperfect, complicated, and urgent.
+            </p>
+            <p>
+              To understand the film's feminist dimensions, it helps to begin with the concept of intersectionality, a term coined by legal scholar Kimberlé Crenshaw in 1989 to describe how race, gender, and class overlap to create compounding systems of disadvantage. <em>The Help</em> operates squarely inside these overlaps, whether or not it always fully grapples with them. The white women of Jackson are constrained by the era's rigid expectations of femininity — marry well, host beautifully, conform quietly. But those constraints are cushioned by racial and economic privilege. The Black women who work in their homes face all of those expectations and none of those cushions. They are required to be nurturing without being acknowledged as mothers, capable without being compensated as professionals, and invisible without being absent.
+            </p>
+            <p>
+              Aibileen's character is the film's moral center. She raises seventeen white children over the course of her career, pouring into each of them a tenderness her own son never fully received from the world. Her daily affirmation to the young Mae Mobley — "You is kind, you is smart, you is important" — is quietly devastating when read as a feminist act. She is giving a little girl the language to resist the diminishment that awaits her, language no one offered Aibileen herself.
+            </p>
+            <blockquote class="pull-quote">
+              "You is kind, you is smart, you is important."
+              <cite>— Aibileen Clark, <em>The Help</em> (2011)</cite>
+            </blockquote>
+            <p>
+              Skeeter, by contrast, represents a more traditional feminist narrative arc: the woman who refuses to conform, who pursues intellectual ambition at the cost of social belonging, who asks uncomfortable questions. The film is careful to show that her rebellion is easier than Aibileen's or Minny's — she has the structural protection to risk what they cannot. Their courage is not less; it simply costs more.
+            </p>
+            <p>
+              Minny's storyline, anchored in domestic abuse and hard-won self-reclamation, expands the film's feminist scope beyond the professional and into the personal. Her eventual decision to leave her husband is framed not as triumph but as survival — a quieter, more honest register than the genre usually permits.
+            </p>
+            <p>
+              <em>The Help</em> is not a flawless feminist text. Critics have rightly pointed out that it centers a white protagonist in a story that belongs, morally and historically, to the women whose voices it claims to amplify. But within its imperfections lives a genuine argument: that the women who are asked to disappear are often the ones holding everything together, and that telling their stories — even imperfectly — is a form of resistance.
+            </p>
+            <p>
+              The help, it turns out, needed no helping. They needed to be heard.
+            </p>
+          </div>
+          <footer class="post-footer">
+            <p class="post-footer-label">Tags</p>
+            <div class="post-tags">
+              <span class="tag">Intersectionality</span>
+              <span class="tag">Race &amp; Gender</span>
+              <span class="tag">1960s America</span>
+              <span class="tag">Domestic Labor</span>
+              <span class="tag">Solidarity</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+
+    <!-- BLOG 10 — ERIN BROCKOVICH -->
+    <div class="page" id="page-blog-10">
+      <div class="blog-main">
+        <div class="back-link-wrap">
+          <a class="back-link" onclick="showPage('blogs')">&#8592; Back to Blogs</a>
+        </div>
+        <article class="blog-post">
+          <header class="post-header">
+            <div class="post-number">10</div>
+            <div class="post-header-text">
+              <h1 class="post-title">Not Here to Please You: Feminism in Erin Brockovich</h1>
+              <p class="post-meta">2000 · Steven Soderbergh</p>
+              <p class="post-tagline">What happens when a woman walks into a room she was never supposed to enter — when she is too loud, too blunt, too much in a world that has made a habit of requiring women to be less?</p>
+            </div>
+          </header>
+          <div class="post-divider"></div>
+          <div class="post-body">
+            <p class="post-intro">
+              Erin Brockovich, directed by Steven Soderbergh and based on a true story, is set in the sun-bleached flatlands of Hinkley, California, where a community is being slowly poisoned by contaminated groundwater, and where the corporation responsible, Pacific Gas and Electric, has spent years counting on no one looking too closely. The film follows Erin Brockovich, a twice-divorced, unemployed single mother of three who talks her way into a job at a small law firm and, through sheer refusal to be dismissed, builds one of the largest class-action lawsuits in American legal history. It is a film about justice, yes — but more fundamentally, it is a film about what it costs a woman to be taken seriously, and what she has to become in order to force the world to listen.
+            </p>
+            <p>
+              To understand the film's feminist dimensions, it helps to begin with the way Erin is introduced to us. She is not a lawyer. She does not have a degree. She dresses in ways that her male colleagues find distracting, and the film does not ask her to apologize for it. From the very first scene, Soderbergh establishes that Erin will be underestimated — by employers, by judges, by the opposing legal teams — and that every single one of those people will be wrong. Her appearance, which other characters treat as a liability, becomes a kind of armor: she is so busy being dismissed for what she looks like that no one notices what she is building.
+            </p>
+            <p>
+              This is a distinctly feminist dynamic. Women have long been asked to make themselves palatable — to soften their voices, dilute their ambition, dress for credibility rather than themselves — as the price of admission to professional spaces. Erin refuses every one of these negotiations. She does not become more conventional as the film progresses. She becomes more herself, and the film rewards her for it.
+            </p>
+            <blockquote class="pull-quote">
+              She does not become more conventional as the film progresses. She becomes more herself, and the film rewards her for it.
+            </blockquote>
+            <p>
+              Her relationship with the Hinkley community is where the film's feminism finds its warmest expression. Erin does not treat the affected families as cases to be managed. She learns their names, their children's names, their medical histories — she makes the invisible visible, which is precisely what PG&amp;E was counting on no one doing. There is a long feminist tradition of valuing this kind of relational, caregiving work, the labor of listening and of keeping human beings from becoming abstractions. Erin practices it instinctively, and it turns out to be her most powerful legal tool.
+            </p>
+            <p>
+              The film is honest, too, about what this costs her. Her relationship with her partner George strains under the weight of her obsession with the case. Her children suffer in her absence. The film does not pretend that Erin's success arrives without sacrifice, nor does it suggest the sacrifice is simply fair. It holds both things at once: that she is extraordinary, and that the world makes extraordinary women pay for the privilege.
+            </p>
+            <p>
+              Where Erin Brockovich complicates easy feminist celebration is in its individualism. The real-world case was built by a community — by the Hinkley residents who trusted Erin with their stories and their bodies and their grief. The film occasionally risks reducing that collective act to one woman's triumph. But Julia Roberts' performance keeps pulling the story back toward connection, toward the moment Erin reads the names aloud and you understand that she has not just won a lawsuit, but insisted — on behalf of everyone who was told to be quiet — that their lives were worth counting.
+            </p>
+            <p>
+              Not everyone who fights this hard gets to win. That Erin did, and that the film immortalized it, is its own argument that the woman in the room no one thought would last is sometimes exactly the person the room needed.
+            </p>
+          </div>
+          <footer class="post-footer">
+            <p class="post-footer-label">Tags</p>
+            <div class="post-tags">
+              <span class="tag">Legal Drama</span>
+              <span class="tag">True Story</span>
+              <span class="tag">Individualism</span>
+              <span class="tag">Labor &amp; Care</span>
+              <span class="tag">2000s Film</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+  </footer>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      document.getElementById('page-' + id).classList.add('active');
+      const navLink = document.getElementById('nav-' + id);
+      if (navLink) navLink.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return false;
+    }
+
+    function showBlog(num) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      document.getElementById('page-blog-' + num).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return false;
+    }
+
+    document.getElementById('nav-intro').classList.add('active');
+  </script>
+
+</body>
+</html>

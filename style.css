@@ -1,0 +1,561 @@
+/* ============================
+   RESET & BASE
+   ============================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f2f4f7;
+  color: #1e2a35;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* ============================
+   TYPOGRAPHY
+   ============================ */
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 2.7rem;
+  margin-bottom: 1.2rem;
+  color: #0f1c26;
+  border-bottom: 1px solid #8aafc4;
+  padding-bottom: 0.4rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #0f1c26;
+}
+
+a {
+  color: #2e6d9e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   HEADER
+   ============================ */
+header {
+  background-color: #0f1c26;
+  color: #dde8f0;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.header-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 2.8rem;
+  letter-spacing: 0.06em;
+  color: #dde8f0;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+.site-title:hover {
+  color: #8aafc4;
+}
+
+.site-tagline {
+  font-style: italic;
+  font-size: 1rem;
+  color: #8aafc4;
+  margin-bottom: 1.5rem;
+}
+
+/* NAV */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #dde8f0;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #8aafc4;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  color: #8aafc4;
+  border-bottom: 2px solid #8aafc4;
+}
+
+/* ============================
+   MAIN LAYOUT
+   ============================ */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* ============================
+   PAGES (show/hide)
+   ============================ */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* ============================
+   INTRO PAGE
+   ============================ */
+.intro-subheading {
+  font-size: 1.1rem;
+  color: #2e6d9e;
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.intro-section p {
+  font-size: 1.05rem;
+  color: #2e3f4f;
+  margin-bottom: 1rem;
+}
+
+/* ============================
+   BLOGS SECTION
+   ============================ */
+.film-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-top: 1.5rem;
+}
+
+.film-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #c5d6e3;
+  border-left: 4px solid #2e6d9e;
+  padding: 1.4rem 1.6rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.film-card:hover {
+  box-shadow: 0 3px 12px rgba(46, 109, 158, 0.12);
+}
+
+.film-number {
+  font-size: 2rem;
+  font-family: Georgia, serif;
+  color: #8aafc4;
+  min-width: 2.5rem;
+  line-height: 1;
+  padding-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.film-info {
+  flex: 1;
+}
+
+.film-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.2rem;
+  color: #0f1c26;
+}
+
+.film-year {
+  font-size: 0.85rem;
+  color: #6a8a9e;
+  margin-bottom: 0.6rem;
+  font-style: italic;
+}
+
+.film-excerpt {
+  font-size: 0.97rem;
+  color: #2e3f4f;
+  margin-bottom: 0.8rem;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.4rem;
+  padding: 0.5rem 1.4rem;
+  background-color: #8aafc4;
+  color: #ffffff;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border: 2px solid #8aafc4;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.read-more:hover {
+  background-color: transparent;
+  color: #8aafc4;
+  border-color: #8aafc4;
+  text-decoration: none;
+}
+
+/* ============================
+   FILM POSTER
+   ============================ */
+.film-poster {
+  flex-shrink: 0;
+  width: 110px;
+}
+
+.film-poster img {
+  display: block;
+  width: 110px;
+  height: 163px;
+  object-fit: cover;
+  border: 1px solid #c5d6e3;
+  box-shadow: 0 2px 8px rgba(15, 28, 38, 0.12);
+}
+
+/* ============================
+   CONTACT SECTION
+   ============================ */
+.contact-section p {
+  font-size: 1rem;
+  color: #2e3f4f;
+  margin-bottom: 0.8rem;
+}
+
+/* ============================
+   KEYWORDS / DEFINITIONS
+   ============================ */
+.keywords-list {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.keyword-entry {
+  background-color: #ffffff;
+  border: 1px solid #c5d6e3;
+  border-left: 4px solid #2e6d9e;
+  padding: 1.3rem 1.6rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.keyword-entry:hover {
+  box-shadow: 0 3px 12px rgba(46, 109, 158, 0.12);
+}
+
+.keyword-entry dt {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.2rem;
+  color: #0f1c26;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.keyword-entry dd {
+  font-size: 1rem;
+  color: #2e3f4f;
+  line-height: 1.8;
+  margin-left: 0;
+}
+
+/* ============================
+   PERSONAL DIGITAL IDENTITY
+   ============================ */
+.pdi-section p {
+  font-size: 1.05rem;
+  color: #2e3f4f;
+  margin-bottom: 1rem;
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+footer {
+  background-color: #0f1c26;
+  color: #6a8a9e;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+/* ============================
+   BLOG POST STYLES
+   ============================ */
+
+
+.blog-main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.back-link-wrap {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 0.5rem 1.4rem;
+  background-color: #2e6d9e;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #2e6d9e;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.back-link:hover {
+  background-color: transparent;
+  color: #2e6d9e;
+  text-decoration: none;
+}
+
+.blog-post {
+  background-color: #ffffff;
+  border: 1px solid #c5d6e3;
+  border-left: 4px solid #2e6d9e;
+  padding: 2.8rem 3rem;
+}
+
+.post-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+  margin-bottom: 1.8rem;
+  /* Override the global header element styles */
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  text-align: left;
+}
+.post-number {
+  font-size: 3rem;
+  font-family: Georgia, serif;
+  color: #8aafc4;
+  line-height: 1;
+  min-width: 3rem;
+  padding-top: 0.3rem;
+}
+
+.post-header-text {
+  flex: 1;
+}
+
+.post-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: 2.4rem;
+  color: #0f1c26;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+  text-align: left;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.post-meta {
+  font-size: 0.88rem;
+  color: #6a8a9e;
+  font-style: italic;
+  margin-bottom: 0.7rem;
+}
+
+.post-tagline {
+  font-size: 1.05rem;
+  color: #2e3f4f;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.post-divider {
+  border: none;
+  border-top: 1px solid #c5d6e3;
+  margin: 1.8rem 0;
+}
+
+.post-body {
+  font-size: 1.02rem;
+  color: #2e3f4f;
+  line-height: 1.85;
+}
+
+.post-body p {
+  margin-bottom: 1.3rem;
+}
+
+.post-intro {
+  font-size: 1.1rem;
+  color: #1e2a35;
+  margin-bottom: 1.8rem;
+}
+
+.post-section-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #0f1c26;
+  letter-spacing: 0.02em;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.pull-quote {
+  border-left: 4px solid #8aafc4;
+  background-color: #f2f4f7;
+  margin: 2rem 0;
+  padding: 1.2rem 1.6rem;
+  font-style: italic;
+  font-size: 1.08rem;
+  color: #0f1c26;
+  line-height: 1.7;
+}
+
+.pull-quote cite {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  font-style: normal;
+  color: #6a8a9e;
+  letter-spacing: 0.03em;
+}
+
+.post-footer {
+  margin-top: 0.5rem;
+}
+
+.post-footer-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6a8a9e;
+  margin-bottom: 0.6rem;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid #8aafc4;
+  color: #2e6d9e;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  border-radius: 999px;
+}
+
+/* ============================
+   BLOG PAGE LAYOUT
+   ============================ */
+#page-blog-1 .blog-main,
+#page-blog-2 .blog-main,
+#page-blog-3 .blog-main,
+#page-blog-4 .blog-main,
+#page-blog-5 .blog-main,
+#page-blog-6 .blog-main,
+#page-blog-7 .blog-main,
+#page-blog-8 .blog-main,
+#page-blog-9 .blog-main,
+#page-blog-10 .blog-main {
+  padding-top: 0;
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 600px) {
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .film-card {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .film-number {
+    font-size: 1.4rem;
+  }
+
+  nav ul {
+    gap: 1.2rem;
+  }
+
+  .film-poster {
+    width: 100%;
+  }
+
+  .film-poster img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .blog-post {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .post-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .post-number {
+    font-size: 2rem;
+  }
+
+  .post-title {
+    font-size: 1.7rem;
+  }
+}
